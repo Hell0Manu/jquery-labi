@@ -1,0 +1,240 @@
+/*DEFAULT*/
+* {
+	box-sizing: border-box;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+	--white: #fff;
+	--green: #3fa14c;
+	--darkblue: #061221;
+}
+
+main {
+	margin-top: 30px;
+	margin: 30px auto 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background-color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+li, button, i, .button {
+	text-decoration: none;
+	outline: none !important;
+	list-style: none;
+	transition: 0.5s;
+}
+
+a {
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+
+section a:hover {
+	color: #3fa14c;
+}
+
+section {
+	margin-top: 30px;
+	max-width: 768px;
+	width: 100%;
+}
+
+.title {
+	font-size: 2em;
+	font-weight: 600;
+	color: black;
+}
+
+.green-theme {
+	color: #3fa14c;
+}
+
+.blue-theme {
+	color: #3f72a1;
+}
+
+.red-theme {
+	color: #cc3131;
+}
+
+.brown-theme {
+	color: #ad611e;
+}
+
+.yellow-theme {
+	color: #d8d822;
+}
+
+#contato span {
+	font-weight: 500;
+}
+
+.sub-title {
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 1.75;
+	color: black;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.btn1 {
+	display: inline-block;
+	text-align: center;
+	border-radius: 40px;
+	padding: 20px 40px;
+	font-weight: 600;
+}
+
+.btn1 {
+	background-color: var(--darkblue);
+	color: var(--white);
+}
+
+.btn1:hover {
+	background: var(--white);
+	color: var(--green);
+}
+
+@media (max-width:920px) {
+	.title {
+		font-size: 1.3em;
+	}
+
+	.sub-title {
+		font-size: 1em;
+	}
+
+	.btn1 {
+		padding: 15px 30px;
+	}
+}
+
+/*TOP NAVIGATION*/
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+	transition: 0.5s;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: rgba(6, 18, 33, 0.8);
+	width: 80%;
+	margin: auto;
+	box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.7);
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+}
+
+.teste {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+main {
+	position: relative;
+	top: 50px;
+}
+
+.content {
+	max-width: 1200px;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 24px 16px;
+	/* margin: auto 1rem; */
+	text-decoration: none;
+	font-size: 17px;
+	position: relative;
+}
+
+.logo {
+	width: 30px;
+	position: absolute;
+	top: 1rem;
+	border-radius: 5px;
+}
+
+#icon {
+	float: right;
+}
+
+#active {
+	display: flex;
+	font-weight: bold;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#active:hover {
+	color: #fff;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.topnav a:hover {
+	color: #3fa14c;
+}
+/* Estilo padrão para o menu */
+.content-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Botão do menu (ícone de hambúrguer) */
+.menu-icon {
+    display: none; /* Ocultar o ícone do menu por padrão */
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .content-menu {
+        display: none; /* Ocultar o menu em telas menores por padrão */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-menu.active {
+        display: flex; /* Mostrar o menu quando ativado */
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar o ícone do menu em telas menores */
+    }
+}
+
+/* Estilo opcional para ícone de menu */
+.menu-icon {
+    color: #333; /* Cor do ícone do menu */
+}
