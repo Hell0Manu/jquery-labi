@@ -34,12 +34,29 @@ $(document).ready(function () {
         $('section').show();
     })
 
-    $('.topnav').click(function() {
+    $('.topnav').click(function () {
         $('.content-menu').toggleClass('active');
     });
-    
+
+    function animateImage() {
+        $(".img").animate
+        (
+            { width: "300px"}, 
+            1000, 
+            
+            function () 
+            { 
+                $(".img").animate
+                ({ width: "200px"},  
+                1000, 
+                function () 
+                { 
+                    animateImage();
+                }); 
+            }
+        );
+    }
+
+    animateImage();
 
 });
-
-
-

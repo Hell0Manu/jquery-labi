@@ -202,16 +202,14 @@ main {
 .topnav a:hover {
 	color: #3fa14c;
 }
-/* Estilo padrão para o menu */
 .content-menu {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-/* Botão do menu (ícone de hambúrguer) */
 .menu-icon {
-    display: none; /* Ocultar o ícone do menu por padrão */
+    display: none;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -219,22 +217,26 @@ main {
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     .content-menu {
-        display: none; /* Ocultar o menu em telas menores por padrão */
+        display: none; 
         flex-direction: column;
         width: 100%;
         text-align: center;
     }
 
     .content-menu.active {
-        display: flex; /* Mostrar o menu quando ativado */
+        display: flex; 
     }
 
     .menu-icon {
-        display: block; /* Mostrar o ícone do menu em telas menores */
     }
 }
 
-/* Estilo opcional para ícone de menu */
 .menu-icon {
-    color: #333; /* Cor do ícone do menu */
+    color: #333; 
+}
+
+/*FORMULARIO*/
+
+input {
+	margin-bottom: 20px;
 }
